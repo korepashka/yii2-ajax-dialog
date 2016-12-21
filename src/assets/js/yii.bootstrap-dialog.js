@@ -39,7 +39,7 @@
                         dialog.setButtons(settings.buttons);
                         var target = dialog.getData('sender');
                         var url;
-                        if (target.length) {
+                        if (target && target.length) {
                             url = target.attr('href') || target.attr('data-url');
                         }
                         if (!url) {
